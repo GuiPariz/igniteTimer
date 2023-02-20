@@ -19,6 +19,7 @@ declare module 'styled-components'{
       5:string,
       6:string,
       7:string,
+      8:string
       withe:string,
     }
 

@@ -17,7 +17,7 @@ export const Menu = styled.nav`
     align-items: center;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
-    color:${props =>props.theme.gray.withe};
+    color:${props =>props.theme.gray[7]};
     &:hover{
       border-bottom: 3px solid ${props => props.theme.product.green};
     }
