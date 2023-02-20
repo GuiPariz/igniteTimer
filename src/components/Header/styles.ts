@@ -6,6 +6,24 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
 `
 
-export const Menu = styled.div`
-  gap: 32px;
+export const Menu = styled.nav`
+  display: flex;
+  gap: 0.5rem;
+  a{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    color:${props =>props.theme.gray.withe};
+    &:hover{
+      border-bottom: 3px solid ${props => props.theme.product.green};
+    }
+    &.active{
+      color: ${props => props.theme.product.green};
+    }
+  }
+  
 `
