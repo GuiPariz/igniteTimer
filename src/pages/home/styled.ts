@@ -58,7 +58,7 @@ const BaseInput = styled.input`
   padding: 0 0.5rem;
   color: ${props => props.theme.gray[7]};
   :focus{
-    box-shadow: none !important;
+    outline: none;
   }
   &:hover{
     border-color: ${props => props.theme.product.green} ;
