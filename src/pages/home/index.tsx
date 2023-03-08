@@ -1,5 +1,5 @@
 import { Play } from "phosphor-react";
-import { DisplayTimer, Form, HomeContainer, Separator, SetTimer } from "./styled";
+import { ContDownButton, DisplayTimer, Form, HomeContainer, Separator, SetTimer, TaskInput, TimerInput } from "./styled";
 
 export default function Home() {
   return (
@@ -7,13 +7,26 @@ export default function Home() {
       <Form>
         <SetTimer>
           <label htmlFor="project">Vou trabalhar em</label>
-          <input
+          <TaskInput
             type="text"
             id="project"
             placeholder="Dê um nome para seu projeto"
+            list="task-suggestions"
           />
+          <datalist id="task-suggestions">
+            <option value="projeto 1"/>
+            <option value="projeto 2"/>
+            <option value="projeto 3"/>
+            <option value="projeto 4"/>
+          </datalist>
           <label htmlFor="timeForProject">Durante</label>
-          <input type="number" id="timeForProject" placeholder="00" />
+          <TimerInput 
+            type="number"
+            id="timeForProject" 
+            placeholder="00" 
+            step={5}
+            max={60}
+            />
           <span>minutos.</span>
         </SetTimer>
 
@@ -25,10 +38,10 @@ export default function Home() {
           <span>0</span>
         </DisplayTimer>
 
-        <button type="submit">
+        <ContDownButton type="submit">
           <Play size={24} />
-          começar
-        </button>
+          Começar
+        </ContDownButton>
       </Form>
     </HomeContainer>
   );
