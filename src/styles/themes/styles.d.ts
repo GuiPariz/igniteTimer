@@ -10,6 +10,7 @@ declare module 'styled-components'{
     feedback:{
       red_dark:string,
       red:string,
+      yellow:string,
     },
     gray:{
       1:string,

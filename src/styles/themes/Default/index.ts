@@ -9,6 +9,7 @@ export const defaultTheme: DefaultTheme = {
   feedback:{
     red_dark:"#7A1921",
     red:"#F03847",
+    yellow:"#fba94c",
   },
   gray:{
     1:"#121214",
