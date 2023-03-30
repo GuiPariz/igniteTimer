@@ -25,13 +25,15 @@ export const ContDownButton = styled.button`
   border: 1px solid transparent;
   font-weight: bold;
   background-color: ${(props) => props.theme.product.green};
-  color: ${(props) => props.theme.gray[7]};
+  color: ${(props) => props.theme.gray.withe};
   &:disabled {
     opacity: 0.7;
     cursor: not-allowed;
+    color: ${props => props.theme.gray[7]};
   }
   &:not(:disabled):hover {
     background-color: ${(props) => props.theme.product.green_dark};
+    color: ${props => props.theme.gray[8]};
   }
 `;
 
